@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced School Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap" style="color: #11998e;"></i>
+                <span style="color: #000000;">EduPrime Academy</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#login" class="login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to EduPrime Academy</h1>
+                <p>Empowering Minds, Shaping Futures. Excellence in Education since 1995.</p>
+                <div class="hero-buttons">
+                    <a href="#login" class="btn btn-primary">Student Portal</a>
+                    <a href="#admission" class="btn btn-secondary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Cards -->
+    <section class="quick-access">
+        <div class="container">
+            <div class="card-grid">
+                <div class="card" onclick="showSection('results')">
+                    <i class="fas fa-chart-line" style="color: #ffffff;"></i>
+                    <h3>Online Results</h3>
+                    <p>Check your exam results instantly</p>
+                </div>
+                <div class="card" onclick="showSection('attendance')">
+                    <i class="fas fa-calendar-check" style="color: #ffffff;"></i>
+                    <h3>Attendance</h3>
+                    <p>Track your attendance record</p>
+                </div>
+                <div class="card" onclick="showSection('admission')">
+                    <i class="fas fa-file-alt" style="color: #ffffff;"></i>
+                    <h3>Admission Form</h3>
+                    <p>Apply for new academic year</p>
+                </div>
+                <div class="card" onclick="showSection('notices')">
+                    <i class="fas fa-bell" style="color: #ffffff;"></i>
+                    <h3>Notices</h3>
+                    <p>Latest announcements and updates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>To provide world-class education that empowers students to become leaders, innovators, and responsible global citizens. We believe in nurturing curiosity, creativity, and critical thinking skills.</p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To be the leading educational institution recognized for academic excellence, innovative teaching methods, and holistic development of students.</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>5000+</h3>
+                            <p>Students</p>
+                        </div>
+                        <div class="stat">
+                            <h3>250+</h3>
+                            <p>Teachers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>95%</h3>
+                            <p>Pass Rate</p>
+                        </div>
+                        <div class="stat">
+                            <h3>28</h3>
+                            <p>Years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600" alt="School Campus">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Academics</h2>
+            <div class="departments">
+                <div class="department">
+                    <i class="fas fa-flask" style="color: #ffffff;"></i>
+                    <h3>Science</h3>
+                    <p>Physics, Chemistry, Biology, Mathematics</p>
+                </div>
+                <div class="department">
+                    <i class="fas fa-calculator" style="color: #ffffff;"></i>
+                    <h3>Commerce</h3>
+                    <p>Accounting, Economics, Business Studies</p>
+                </div>
+                <div class="department">
+                    <i class="fas fa-book" style="color: #ffffff;"></i>
+                    <h3>Arts</h3>
+                    <p>History, Geography, Political Science, Literature</p>
+                </div>
+                <div class="department">
+                    <i class="fas fa-laptop-code" style="color: #ffffff;"></i>
+                    <h3>Computer Science</h3>
+                    <p>Programming, Web Development, Database</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400" alt="Classroom">
+                    <div class="overlay"><i class="fas fa-search" style="color: #ffffff;"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Library">
+                    <div class="overlay"><i class="fas fa-search" style="color: #ffffff;"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400" alt="Sports">
+                    <div class="overlay"><i class="fas fa-search" style="color: #ffffff;"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400" alt="Laboratory">
+                    <div class="overlay"><i class="fas fa-search" style="color: #ffffff;"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=400" alt="Campus">
+                    <div class="overlay"><i class="fas fa-search" style="color: #ffffff;"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1596496050827-8299e0220de1?w=400" alt="Events">
+                    <div class="overlay"><i class="fas fa-search" style="color: #ffffff;"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Login Portal</h2>
+            <div class="login-container">
+                <div class="login-tabs">
+                    <button class="tab-btn active" data-tab="student">Student Login</button>
+                    <button class="tab-btn" data-tab="teacher">Teacher Login</button>
+                </div>
+                
+                <div class="login-form active" id="student-login">
+                    <form>
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Student ID</label>
+                            <input type="text" placeholder="Enter your Student ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-lock"></i> Password</label>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login as Student</button>
+                    </form>
+                </div>
+                
+                <div class="login-form" id="teacher-login">
+                    <form>
+                        <div class="form-group">
+                            <label><i class="fas fa-user-tie"></i> Teacher ID</label>
+                            <input type="text" placeholder="Enter your Teacher ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-lock"></i> Password</label>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login as Teacher</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section">
+        <div class="container">
+            <h2 class="section-title">Online Result Portal</h2>
+            <div class="result-portal">
+                <form class="result-form">
+                    <div class="form-group">
+                        <label><i class="fas fa-id-card"></i> Roll Number</label>
+                        <input type="text" placeholder="Enter your Roll Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar"></i> Exam</label>
+                        <select required>
+                            <option value="">Select Exam</option>
+                            <option value="midterm">Mid-Term Exam 2024</option>
+                            <option value="final">Final Exam 2024</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">View Result</button>
+                </form>
+                
+                <div class="result-display" id="result-display" style="display: none;">
+                    <div class="student-info">
+                        <h3>Student Information</h3>
+                        <p><strong>Name:</strong> John Doe</p>
+                        <p><strong>Roll No:</strong> 2024001</p>
+                        <p><strong>Class:</strong> 12th - Science</p>
+                    </div>
+                    <table class="result-table">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Marks Obtained</th>
+                                <th>Total Marks</th>
+                                <th>Percentage</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Physics</td>
+                                <td>85</td>
+                                <td>100</td>
+                                <td>85%</td>
+                                <td class="grade-a">A</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>78</td>
+                                <td>100</td>
+                                <td>78%</td>
+                                <td class="grade-b">B+</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>92</td>
+                                <td>100</td>
+                                <td>92%</td>
+                                <td class="grade-a">A+</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>88</td>
+                                <td>100</td>
+                                <td>88%</td>
+                                <td class="grade-a">A</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>80</td>
+                                <td>100</td>
+                                <td>80%</td>
+                                <td class="grade-a">A</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2"><strong>Total</strong></td>
+                                <td><strong>423</strong></td>
+                                <td><strong>500</strong></td>
+                                <td><strong>84.6%</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attendance Section -->
+    <section id="attendance" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Attendance Management</h2>
+            <div class="attendance-portal">
+                <form class="attendance-form">
+                    <div class="form-group">
+                        <label><i class="fas fa-id-card"></i> Student ID</label>
+                        <input type="text" placeholder="Enter your Student ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar"></i> Month</label>
+                        <select required>
+                            <option value="">Select Month</option>
+                            <option value="january">January 2024</option>
+                            <option value="february">February 2024</option>
+                            <option value="march">March 2024</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">View Attendance</button>
+                </form>
+                
+                <div class="attendance-display" id="attendance-display" style="display: none;">
+                    <div class="attendance-summary">
+                        <div class="summary-card present">
+                            <h3>Present</h3>
+                            <p>22 Days</p>
+                        </div>
+                        <div class="summary-card absent">
+                            <h3>Absent</h3>
+                            <p>3 Days</p>
+                        </div>
+                        <div class="summary-card percentage">
+                            <h3>Attendance</h3>
+                            <p>88%</p>
+                        </div>
+                    </div>
+                    <table class="attendance-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Remarks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>March 1, 2024</td><td class="status-present">Present</td><td>-</td></tr>
+                            <tr><td>March 2, 2024</td><td class="status-present">Present</td><td>-</td></tr>
+                            <tr><td>March 3, 2024</td><td class="status-absent">Absent</td><td>Medical Leave</td></tr>
+                            <tr><td>March 4, 2024</td><td class="status-present">Present</td><td>-</td></tr>
+                            <tr><td>March 5, 2024</td><td class="status-present">Present</td><td>-</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form Section -->
+    <section id="admission" class="section">
+        <div class="container">
+            <h2 class="section-title">Online Admission Form</h2>
+            <div class="admission-form-container">
+                <form class="admission-form">
+                    <h3>Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <select required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <h3>Contact Information</h3>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Address</label>
+                        <textarea rows="3" required></textarea>
+                    </div>
+                    
+                    <h3>Academic Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Previous School</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Previous Class</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Applying For Class</label>
+                            <select required>
+                                <option value="">Select Class</option>
+                                <option value="9">Class 9</option>
+                                <option value="10">Class 10</option>
+                                <option value="11">Class 11</option>
+                                <option value="12">Class 12</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Stream</label>
+                            <select required>
+                                <option value="">Select Stream</option>
+                                <option value="science">Science</option>
+                                <option value="commerce">Commerce</option>
+                                <option value="arts">Arts</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Upload Documents (Marksheet, Birth Certificate)</label>
+                        <input type="file" multiple accept=".pdf,.jpg,.png">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EduPrime Academy</h3>
+                    <p>Excellence in Education</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook" style="color: #000000;"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color: #000000;"></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color: #000000;"></i></a>
+                        <a href="#"><i class="fab fa-linkedin" style="color: #000000;"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#academics">Academics</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Education Street, City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@eduprime.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduPrime Academy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
